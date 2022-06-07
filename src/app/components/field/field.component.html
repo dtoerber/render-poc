@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="yellow">
+    <ng-container [ngTemplateOutlet]="animalTemplate"></ng-container>
+    <ng-container [ngTemplateOutlet]="animalTemplate"></ng-container>
+    <ng-container [ngTemplateOutlet]="animalTemplate"></ng-container>
+    <ng-container [ngTemplateOutlet]="animalTemplate"></ng-container>
+  </div>
+  <div class="orange">
+    <ng-content select="app-dog"></ng-content>
+  </div>
+  <div class="red">
+    <ng-content select="app-cow"></ng-content>
+  </div>
+  <div class="green">
+    <ng-content select="app-bird"></ng-content>
+  </div>
+  <ng-content></ng-content>
+</div>

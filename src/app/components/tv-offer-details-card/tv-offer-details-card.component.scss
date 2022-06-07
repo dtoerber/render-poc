@@ -1,0 +1,118 @@
+$left-right-padding: 1rem;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+  border: solid 1px whitesmoke;
+  border-radius: 0.25rem;
+  max-width: 400px;
+  color: black;
+}
+
+.offer-top-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 0.5rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-image: linear-gradient(to left, #00abea, #0073d0);
+  height: 0.5rem;
+  width: 100%;
+  .offer-top-border-label {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1.25rem;
+    background-image: linear-gradient(to left, #00abea, #0073d0);
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+}
+.psu-card-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  p,
+  a {
+    text-align: center;
+  }
+  .title {
+    font-size: 1.125rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  .channelNumberHeading {
+    margin: 1rem;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    letter-spacing: -0.11rem;
+  }
+  .channelNumberSubHeading {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  .description {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .price-per-month {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .choose-button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem; // make space for for button focus border
+    background-image: linear-gradient(
+      180deg,
+      white 0%,
+      white 49%,
+      gray 49%,
+      whitesmoke 50%,
+      whitesmoke 50%
+    );
+    button {
+      margin-top: 0;
+    }
+  }
+
+  .bundle-icons-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0.25rem 0.25rem;
+    background-color: whitesmoke;
+    position: relative;
+    padding-bottom: 2rem;
+    .bundle-icons-label {
+      margin-top: 1.5rem;
+      letter-spacing: 0.125rem;
+      text-align: center;
+      font-size: 0.75rem;
+    }
+    .bundle-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0.5625rem;
+    }
+    img {
+      width: 4.875rem;
+    }
+  }
+}
