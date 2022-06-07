@@ -1,11 +1,12 @@
 <div class="container">
   <div class="yellow">
     <ng-container *ngFor="let cat of cats">
-      <ng-container [ngTemplateOutlet]="animalTemplate"></ng-container>
+      <ng-container [ngTemplateOutlet]="catTemplate"></ng-container>
     </ng-container>
   </div>
   <div class="orange">
-    <ng-content select="app-dog"></ng-content>
+    <ng-container [ngTemplateOutlet]="dogTemplate"></ng-container>
+    <ng-container [ngTemplateOutlet]="dogTemplate"></ng-container>
   </div>
   <div class="red">
     <ng-content select="app-cow"></ng-content>

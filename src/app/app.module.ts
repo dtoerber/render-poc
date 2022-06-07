@@ -19,9 +19,10 @@ import { CatComponent } from './components/cat/cat.component';
 import { DogComponent } from './components/dog/dog.component';
 import { CowComponent } from './components/cow/cow.component';
 import { FieldComponent } from './components/field/field.component';
-import { AnimalDirective } from './animal.directive';
 import { SnakeComponent } from './components/snake/snake.component';
 import { BirdComponent } from './components/bird/bird.component';
+import { CatDirective } from './cat.directive';
+import { DogDirective } from './dog.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BirdComponent } from './components/bird/bird.component';
     FieldComponent,
     SnakeComponent,
     BirdComponent,
-    AnimalDirective,
+    CatDirective,
+    DogDirective,
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,10 @@ import { Directive, TemplateRef } from '@angular/core';
 import { FieldComponent } from './components/field/field.component';
 
 @Directive({
-  selector: '[appAnimal]',
+  selector: '[appCat]',
 })
-export class AnimalDirective {
+export class CatDirective {
   constructor(templateRef: TemplateRef<void>, field: FieldComponent) {
-    field.animalTemplate = templateRef;
+    field.catTemplate = templateRef;
   }
 }
