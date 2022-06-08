@@ -22,10 +22,11 @@ import { SnakeComponent } from './components/snake/snake.component';
 import { BirdComponent } from './components/bird/bird.component';
 import { CatDirective } from './cat.directive';
 import { DogDirective } from './dog.directive';
-import { OfferBaseComponent } from './components/offer-base/offer-base.component';
-import { OfferTopComponent } from './offer-top/offer-top.component';
-import { OfferBottomComponent } from './offer-bottom/offer-bottom.component';
-import { StorefrontComponent } from './storefront/storefront.component';
+import { OfferBaseComponent } from './store-front/offer-base/offer-base.component';
+import { OfferTopComponent } from './store-front/offer-top/offer-top.component';
+import { OfferBottomComponent } from './store-front/offer-bottom/offer-bottom.component';
+import { StorefrontComponent } from './store-front/storefront/storefront.component';
+import { SpeedIsGoodForComponent } from './store-front/speed-is-good-for/speed-is-good-for.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { StorefrontComponent } from './storefront/storefront.component';
     OfferTopComponent,
     OfferBottomComponent,
     StorefrontComponent,
+    SpeedIsGoodForComponent,
   ],
   imports: [
     BrowserModule,
