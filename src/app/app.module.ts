@@ -12,7 +12,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { TvOfferDetailsCardComponent } from './components/tv-offer-details-card/tv-offer-details-card.component';
-import { TvWraperComponent } from './components/tv-wraper.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FarmComponent } from './components/farm/farm.component';
 import { CatComponent } from './components/cat/cat.component';
@@ -33,7 +32,6 @@ import { StorefrontComponent } from './storefront/storefront.component';
     AppComponent,
     NavComponent,
     TvOfferDetailsCardComponent,
-    TvWraperComponent,
     FarmComponent,
     CatComponent,
     DogComponent,
