@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  p,
+  a {
+    text-align: center;
+  }
+  .title {
+    font-size: 1.125rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  .channelNumberHeading {
+    margin: 1rem;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    letter-spacing: -0.11rem;
+  }
+  .channelNumberSubHeading {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  .description {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .price-per-month {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}

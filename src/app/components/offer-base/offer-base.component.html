@@ -2,7 +2,7 @@
   <div class="offer-top-border-label">{{ cardLabel }}</div>
 </div>
 <div class="top">
-  <ng-content></ng-content>
+  <ng-content select="app-offer-top"></ng-content>
 </div>
 <div class="choose-button">
   <button mat-raised-button (click)="ctaClicked.emit()">
@@ -10,5 +10,5 @@
   </button>
 </div>
 <div class="bottom">
-  <ng-content></ng-content>
+  <ng-content select="app-offer-bottom"></ng-content>
 </div>
