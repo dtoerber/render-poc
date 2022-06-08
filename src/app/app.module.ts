@@ -23,6 +23,7 @@ import { SnakeComponent } from './components/snake/snake.component';
 import { BirdComponent } from './components/bird/bird.component';
 import { CatDirective } from './cat.directive';
 import { DogDirective } from './dog.directive';
+import { OfferBaseComponent } from './components/offer-base/offer-base.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { DogDirective } from './dog.directive';
     BirdComponent,
     CatDirective,
     DogDirective,
+    OfferBaseComponent,
   ],
   imports: [
     BrowserModule,
