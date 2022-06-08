@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './components/nav/nav.component';
+import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -30,6 +30,8 @@ import { SpeedIsGoodForComponent } from './store-front/speed-is-good-for/speed-i
 import { TvOfferTopComponent } from './store-front/tv-offer-top/tv-offer-top.component';
 import { SpeedometerModule } from './store-front/speedometer/speedometer.module';
 import { InternetOfferTopComponent } from './store-front/internet-offer-top/internet-offer-top.component';
+import { CowDirective } from './cow.directive';
+import { BirdDirective } from './bird.directive';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { InternetOfferTopComponent } from './store-front/internet-offer-top/inte
     BirdComponent,
     CatDirective,
     DogDirective,
+    CowDirective,
+    BirdDirective,
     OfferBaseComponent,
     OfferTopComponent,
     OfferBottomComponent,

@@ -1,12 +1,9 @@
 <app-field>
   <app-cat *appCat></app-cat>
   <app-dog *appDog></app-dog>
-  <app-dog></app-dog>
-  <app-dog></app-dog>
-  <app-cow></app-cow>
-  <app-snake></app-snake>
-  <ng-container ngProjectAs="app-bird">
-    <app-snake></app-snake>
-  </ng-container>
+  <app-cow *appCow></app-cow>
+  <app-bird *appBird></app-bird>
   <app-bird></app-bird>
+  <app-snake ngProjectAs="app-bird"></app-snake>
+  <app-snake></app-snake>
 </app-field>

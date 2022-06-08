@@ -1,11 +1,26 @@
 <div class="container">
-  <ng-container *ngFor="let cat of cats">
-    <ng-container [ngTemplateOutlet]="catTemplate"></ng-container>
-  </ng-container>
-  <ng-container *ngFor="let dog of dogs">
-    <ng-container [ngTemplateOutlet]="dogTemplate"></ng-container>
-  </ng-container>
-  <ng-content select="app-cow"></ng-content>
-  <ng-content select="app-bird"></ng-content>
+  <div class="yellow">
+    <ng-container *ngFor="let cat of cats">
+      <ng-container [ngTemplateOutlet]="catTemplate"></ng-container>
+    </ng-container>
+  </div>
+  <div class="orange">
+    <ng-container *ngFor="let dog of dogs">
+      <ng-container [ngTemplateOutlet]="dogTemplate"></ng-container>
+    </ng-container>
+  </div>
+  <div class="red">
+    <ng-container *ngFor="let cow of [1, 2, 3, 4]">
+      <ng-container [ngTemplateOutlet]="cowTemplate"></ng-container>
+    </ng-container>
+  </div>
+  <div class="green">
+    <ng-container *ngFor="let bird of [1, 2]">
+      <ng-container [ngTemplateOutlet]="birdTemplate"></ng-container>
+    </ng-container>
+  </div>
+  <div class="green">
+    <ng-content select="app-bird"></ng-content>
+  </div>
   <ng-content></ng-content>
 </div>
