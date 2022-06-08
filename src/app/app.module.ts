@@ -27,6 +27,7 @@ import { OfferTopComponent } from './store-front/offer-top/offer-top.component';
 import { OfferBottomComponent } from './store-front/offer-bottom/offer-bottom.component';
 import { StorefrontComponent } from './store-front/storefront/storefront.component';
 import { SpeedIsGoodForComponent } from './store-front/speed-is-good-for/speed-is-good-for.component';
+import { TvOfferTopComponent } from './store-front/tv-offer-top/tv-offer-top.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { SpeedIsGoodForComponent } from './store-front/speed-is-good-for/speed-i
     OfferBottomComponent,
     StorefrontComponent,
     SpeedIsGoodForComponent,
+    TvOfferTopComponent,
   ],
   imports: [
     BrowserModule,

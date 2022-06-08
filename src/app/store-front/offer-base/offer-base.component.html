@@ -3,6 +3,7 @@
 </div>
 <div class="top">
   <ng-content select="app-offer-top"></ng-content>
+  <ng-content select="app-tv-offer-top"></ng-content>
 </div>
 <div class="choose-button">
   <button mat-raised-button (click)="ctaClicked.emit()">
@@ -10,5 +11,6 @@
   </button>
 </div>
 <div class="bottom">
-  <ng-content></ng-content>
+  <ng-content select="app-offer-bottom"></ng-content>
+  <ng-content select="app-speed-is-good-for"></ng-content>
 </div>

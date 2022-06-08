@@ -9,7 +9,8 @@ export class SpeedIsGoodForComponent implements OnInit {
   /**
    * Heading for Speed Is Good For section
    */
-  @Input() speedIsGoodForBulletsHeadline: string = 'Speed Is Good For';
+  @Input() speedIsGoodForBulletsHeadline: string =
+    'Speed Is Good For'.toLocaleUpperCase();
   @Input() listItems: string[] = [
     'HD streaming on multiple devices',
     'Online gaming',

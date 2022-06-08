@@ -1,0 +1,16 @@
+<div class="container">
+  <p class="title">{{ cardTitle }}</p>
+  <p class="channelNumberHeading">{{ channelNumberHeading }}</p>
+  <p class="channelNumberSubHeading">{{ channelNumberSubHeading }}</p>
+  <p class="description">{{ description }}</p>
+  <a
+    ngk-link
+    linkStyle="standalone"
+    href="javascript:void(0);"
+    (click)="descriptionLinkClicked.emit()"
+    aria-describedby="Aria-Describedby-Opens-A-Dialog"
+  >
+    {{ descriptionLink }}
+  </a>
+  <div class="price-per-month"></div>
+</div>
