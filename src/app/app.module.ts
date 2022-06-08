@@ -24,6 +24,9 @@ import { BirdComponent } from './components/bird/bird.component';
 import { CatDirective } from './cat.directive';
 import { DogDirective } from './dog.directive';
 import { OfferBaseComponent } from './components/offer-base/offer-base.component';
+import { OfferTopComponent } from './offer-top/offer-top.component';
+import { OfferBottomComponent } from './offer-bottom/offer-bottom.component';
+import { StorefrontComponent } from './storefront/storefront.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { OfferBaseComponent } from './components/offer-base/offer-base.component
     CatDirective,
     DogDirective,
     OfferBaseComponent,
+    OfferTopComponent,
+    OfferBottomComponent,
+    StorefrontComponent,
   ],
   imports: [
     BrowserModule,

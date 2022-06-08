@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FarmComponent } from './components/farm/farm.component';
 import { TvWraperComponent } from './components/tv-wraper.component';
+import { StorefrontComponent } from './storefront/storefront.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/tv', pathMatch: 'full' },
+  { path: '', redirectTo: '/storefront', pathMatch: 'full' },
   {
     path: 'tv',
     component: TvWraperComponent,
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'farm',
     component: FarmComponent,
+  },
+  {
+    path: 'storefront',
+    component: StorefrontComponent,
   },
 ];
 
