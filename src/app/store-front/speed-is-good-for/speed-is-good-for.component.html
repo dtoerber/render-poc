@@ -1,6 +1,9 @@
-<ul>
-  <li>HD streaming on multiple devices</li>
-  <li>Online gaming</li>
-  <li>Downloading shows, movies and large files</li>
-  <li>Supporting multiple connected smart home devices</li>
-</ul>
+<div class="container">
+  <h3 class="check-list-title">{{ speedIsGoodForBulletsHeadline }}</h3>
+  <ul>
+    <li *ngFor="let item of listItems">
+      <span class="checkmark-bullet" aria-hidden="true">✓</span>
+      {{ item }}
+    </li>
+  </ul>
+</div>
