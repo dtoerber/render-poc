@@ -28,6 +28,8 @@ import { OfferBottomComponent } from './store-front/offer-bottom/offer-bottom.co
 import { StorefrontComponent } from './store-front/storefront/storefront.component';
 import { SpeedIsGoodForComponent } from './store-front/speed-is-good-for/speed-is-good-for.component';
 import { TvOfferTopComponent } from './store-front/tv-offer-top/tv-offer-top.component';
+import { SpeedometerModule } from './store-front/speedometer/speedometer.module';
+import { InternetOfferTopComponent } from './store-front/internet-offer-top/internet-offer-top.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { TvOfferTopComponent } from './store-front/tv-offer-top/tv-offer-top.com
     StorefrontComponent,
     SpeedIsGoodForComponent,
     TvOfferTopComponent,
+    InternetOfferTopComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { TvOfferTopComponent } from './store-front/tv-offer-top/tv-offer-top.com
     MatIconModule,
     MatListModule,
     DragDropModule,
+    SpeedometerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,48 @@
+<div [attr.aria-hidden]="true">
+  <svg
+    class="speedometer"
+    viewBox="0 0 100 94"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" class="color-begin" />
+        <stop offset="100%" class="color-end" />
+      </linearGradient>
+    </defs>
+    <!-- arc: radiusX,radiusY xRot lgArc,sweep dx,dy -->
+    <path
+      class="range-line"
+      d="
+      M 26.5, 90.7
+      a 47,47 0 1,1 47,0
+    "
+    />
+    <path
+      class="fill-line"
+      [ngClass]="{
+        'fill-0': ringFillPercent === speedometerFillValues.ZERO,
+        'fill-25': ringFillPercent === speedometerFillValues.QUARTER,
+        'fill-50': ringFillPercent === speedometerFillValues.HALF,
+        'fill-75': ringFillPercent === speedometerFillValues.THREEQTR,
+        'fill-100': ringFillPercent === speedometerFillValues.FULL
+      }"
+      d="
+      M 26.5, 90.7
+      a 47,47 0 1,1 47,0
+    "
+    />
+  </svg>
+
+  <div class="inner-text">
+    <span class="text-headline">
+      {{ textHeadline }}
+    </span>
+    <span class="text-value">
+      {{ textValue }}
+    </span>
+    <span class="text-units">
+      {{ textUnits }}
+    </span>
+  </div>
+</div>

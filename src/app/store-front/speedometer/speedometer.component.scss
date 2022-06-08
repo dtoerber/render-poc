@@ -1,0 +1,130 @@
+// this needs to match the value specified in the speedometer component
+// in order for the line animation and text animation to "match" and end at the same time
+$animationTime: 1s;
+$animationDelay: 0.5s;
+
+:host {
+  display: block;
+  position: relative; // need to absolutely position text inside svg
+
+  svg.speedometer {
+    display: block;
+
+    // grey line in background that gets "filled" or drawn over by fill-line
+    path.range-line {
+      stroke: gray; // #bbb;
+      stroke-width: 6; // CAUTION: changing the stroke-width can cause cropping or the speedometer not to hit the edge of the container
+      stroke-linecap: round;
+      fill: none;
+    }
+    path.fill-line {
+      stroke: url(#linear);
+      stroke-width: 6; // CAUTION: changing the stroke-width can cause cropping or the speedometer not to hit the edge of the container
+      stroke-linecap: round;
+      fill: none;
+
+      // use dashed stroke settings to produce "filling" effect for arc
+      // - initially "not-filled" state
+      // stroke-dasharray: stroke-length, gap-length
+      // - got these values by guess-and-check, it is possible to calculate via js if necessary
+      // - 246 = approximate length of arc path in "units"
+      stroke-dasharray: 0, 246;
+
+      &.fill-0 {
+        // animation: name duration timing-function delay repeat direction fill-mode
+        animation: ringFillPercent0 $animationTime ease-in-out $animationDelay 1
+          normal forwards;
+      }
+      &.fill-25 {
+        animation: ringFillPercent25 $animationTime ease-in-out $animationDelay
+          1 normal forwards;
+      }
+      &.fill-50 {
+        animation: ringFillPercent50 $animationTime ease-in-out $animationDelay
+          1 normal forwards;
+      }
+      &.fill-75 {
+        animation: ringFillPercent75 $animationTime ease-in-out $animationDelay
+          1 normal forwards;
+      }
+      &.fill-100 {
+        animation: ringFillPercent100 $animationTime ease-in-out $animationDelay
+          1 normal forwards;
+      }
+    }
+
+    // using 0% and 100% keyframes so beginning state of animation is not-filled
+    // instead of looking like the completed state and jumping to not-filled, then animating
+    @keyframes ringFillPercent0 {
+      0% {
+        stroke-dasharray: 0, 246;
+      }
+      100% {
+        stroke-dasharray: 0, 246; // 0% filled outer ring
+      }
+    }
+    @keyframes ringFillPercent25 {
+      0% {
+        stroke-dasharray: 0, 246;
+      }
+      100% {
+        stroke-dasharray: 50, 196; // 50% filled outer ring
+      }
+    }
+    @keyframes ringFillPercent50 {
+      0% {
+        stroke-dasharray: 0, 246;
+      }
+      100% {
+        stroke-dasharray: 123, 123; // 50% filled outer ring
+      }
+    }
+    @keyframes ringFillPercent75 {
+      0% {
+        stroke-dasharray: 0, 246;
+      }
+      100% {
+        stroke-dasharray: 198, 48; // 75% filled outer ring
+      }
+    }
+    @keyframes ringFillPercent100 {
+      0% {
+        stroke-dasharray: 0, 246;
+      }
+      100% {
+        stroke-dasharray: 246, 0; // 100% filled outer ring
+      }
+    }
+
+    .color-begin {
+      stop-color: cornflowerblue; // #0062b2;
+    }
+    .color-end {
+      stop-color: lightblue; // #1f92f3;
+    }
+  }
+
+  .inner-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    .text-headline {
+      font-size: 0.875rem;
+    }
+    .text-value {
+      font-size: 2.25rem;
+      line-height: 1.2;
+    }
+    .text-units {
+      font-size: 0.875rem;
+    }
+  }
+}
