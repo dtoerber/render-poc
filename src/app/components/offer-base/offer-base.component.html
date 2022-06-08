@@ -1,0 +1,14 @@
+<div class="offer-top-border" tabindex="-1">
+  <div class="offer-top-border-label">{{ cardLabel }}</div>
+</div>
+<div class="top">
+  <ng-content></ng-content>
+</div>
+<div class="choose-button">
+  <button mat-raised-button (click)="ctaClicked.emit()">
+    {{ ctaLabel }}
+  </button>
+</div>
+<div class="bottom">
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+  border: solid 1px whitesmoke;
+  border-radius: 0.25rem;
+  max-width: 400px;
+  color: black;
+}
+.offer-top-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 0.5rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-image: linear-gradient(to left, #00abea, #0073d0);
+  height: 0.5rem;
+  width: 100%;
+  .offer-top-border-label {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1.25rem;
+    background-image: linear-gradient(to left, #00abea, #0073d0);
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+}
+
+.choose-button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem; // make space for for button focus border
+  background-image: linear-gradient(
+    180deg,
+    white 0%,
+    white 49%,
+    gray 49%,
+    whitesmoke 50%,
+    whitesmoke 50%
+  );
+  button {
+    margin-top: 0;
+  }
+}

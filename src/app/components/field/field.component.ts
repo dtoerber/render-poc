@@ -9,4 +9,5 @@ export class FieldComponent {
   public catTemplate!: TemplateRef<void>;
   public dogTemplate!: TemplateRef<void>;
   public cats = [1, 2, 3];
+  public dogs = [1, 2, 3, 4];
 }
