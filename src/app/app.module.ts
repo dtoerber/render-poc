@@ -32,11 +32,16 @@ import { SpeedometerModule } from './store-front/speedometer/speedometer.module'
 import { InternetOfferTopComponent } from './store-front/internet-offer-top/internet-offer-top.component';
 import { CowDirective } from './cow.directive';
 import { BirdDirective } from './bird.directive';
-import { StoreComponent } from './store-front-2/store/store.component';
-import { AppAComponent } from './store-front-2/app-a/app-a.component';
-import { AppBComponent } from './store-front-2/app-b/app-b.component';
-import { WidgetDirective } from './store-front-2/widget.directive';
-import { WidgetService } from './store-front-2/widget.service';
+import { StoreComponent } from './swap/store/store.component';
+import { AppAComponent } from './swap/app-a/app-a.component';
+import { AppBComponent } from './swap/app-b/app-b.component';
+import { WidgetDirective } from './swap/widget.directive';
+import { WidgetService } from './swap/widget.service';
+import { HybridOfferComponent } from './store-front/hybrid-offer/hybrid-offer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -65,6 +70,8 @@ import { WidgetService } from './store-front-2/widget.service';
     AppAComponent,
     AppBComponent,
     WidgetDirective,
+    HybridOfferComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,6 +85,9 @@ import { WidgetService } from './store-front-2/widget.service';
     MatListModule,
     DragDropModule,
     SpeedometerModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
   ],
   providers: [WidgetService],
   bootstrap: [AppComponent],

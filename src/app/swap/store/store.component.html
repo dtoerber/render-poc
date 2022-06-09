@@ -1,0 +1,11 @@
+<h3>Widgets</h3>
+
+<button mat-raised-button color="primary" (click)="loadComponent(0)">A</button>
+<button mat-raised-button color="accent" (click)="loadComponent(1)">B</button>
+<button mat-raised-button color="primary" (click)="loadComponent(2)">TV</button>
+<button mat-raised-button color="accent" (click)="loadComponent(3)">
+  Hybrid
+</button>
+<div class="container">
+  <ng-template appWidget></ng-template>
+</div>

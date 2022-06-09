@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FarmComponent } from './components/farm/farm.component';
 import { TvOfferDetailsCardComponent } from './store-front/tv-offer-details-card/tv-offer-details-card.component';
 import { StorefrontComponent } from './store-front/storefront/storefront.component';
-import { StoreComponent } from './store-front-2/store/store.component';
+import { StoreComponent } from './swap/store/store.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/storefront', pathMatch: 'full' },
@@ -20,8 +21,12 @@ const routes: Routes = [
     component: StorefrontComponent,
   },
   {
-    path: 'storefront2',
+    path: 'swap',
     component: StoreComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
   },
 ];
 

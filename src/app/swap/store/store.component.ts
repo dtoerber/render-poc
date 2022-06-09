@@ -4,9 +4,6 @@ import {
   ChangeDetectionStrategy,
   ViewChild,
 } from '@angular/core';
-import { AppAComponent } from '../app-a/app-a.component';
-import { AppBComponent } from '../app-b/app-b.component';
-import { WidgetItem } from '../widget-item';
 import { WidgetComponent } from '../widget.component';
 import { WidgetDirective } from '../widget.directive';
 import { WidgetService } from '../widget.service';
@@ -20,8 +17,6 @@ import { WidgetService } from '../widget.service';
 export class StoreComponent implements OnInit {
   widgets = this.widgetService.getWidgets();
   @ViewChild(WidgetDirective, { static: true }) appWidget!: WidgetDirective;
-
-  currentComponet = 0;
   constructor(private widgetService: WidgetService) {}
 
   ngOnInit(): void {
@@ -29,7 +24,6 @@ export class StoreComponent implements OnInit {
   }
 
   loadComponent(idx: number) {
-    this.currentComponet = idx;
     const viewContainerRef = this.appWidget.viewContainerRef;
     viewContainerRef.clear();
 
