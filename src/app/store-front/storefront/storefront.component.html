@@ -1,15 +1,17 @@
 <div class="container">
-  <app-offer-base cardLabel="TV SELECT">
+  <app-offer-base class="widget" cardLabel="TV SELECT">
     <app-tv-offer-top></app-tv-offer-top>
     <app-offer-bottom></app-offer-bottom>
   </app-offer-base>
-  <app-offer-base cardLabel="SPECTRUM ULTRA">
+  <app-offer-base class="widget" cardLabel="SPECTRUM ULTRA">
     <app-internet-offer-top></app-internet-offer-top>
     <app-speed-is-good-for></app-speed-is-good-for>
   </app-offer-base>
-  <app-offer-base>
+  <app-offer-base class="widget">
     <app-internet-offer-top></app-internet-offer-top>
     <app-offer-bottom></app-offer-bottom>
   </app-offer-base>
-  <!-- <spectrum-tv-offer-details-card></spectrum-tv-offer-details-card> -->
+  <spectrum-tv-offer-details-card
+    class="widget"
+  ></spectrum-tv-offer-details-card>
 </div>
