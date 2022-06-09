@@ -32,6 +32,9 @@ import { SpeedometerModule } from './store-front/speedometer/speedometer.module'
 import { InternetOfferTopComponent } from './store-front/internet-offer-top/internet-offer-top.component';
 import { CowDirective } from './cow.directive';
 import { BirdDirective } from './bird.directive';
+import { StoreComponent } from './store-front-2/store/store.component';
+import { AppAComponent } from './store-front-2/app-a/app-a.component';
+import { AppBComponent } from './store-front-2/app-b/app-b.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,9 @@ import { BirdDirective } from './bird.directive';
     SpeedIsGoodForComponent,
     TvOfferTopComponent,
     InternetOfferTopComponent,
+    StoreComponent,
+    AppAComponent,
+    AppBComponent,
   ],
   imports: [
     BrowserModule,
