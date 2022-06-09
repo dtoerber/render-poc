@@ -1,5 +1,6 @@
-<div class="container" *ngFor="let widget of widgets">
-  <div class="widget">
-    <app-cms-widget [widget]="widget"></app-cms-widget>
-  </div>
+<div class="widgets-container">
+  <app-cms-widget
+    *ngFor="let widget of widgets"
+    [widget]="widget"
+  ></app-cms-widget>
 </div>
