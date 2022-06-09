@@ -10,8 +10,15 @@ import { Widget } from '../models/widget';
 
 @Component({
   selector: 'app-cms-widget',
-  template: `<ng-template #cmsWidget></ng-template>`,
-  styles: [],
+  template: `<div class="widget"><ng-template #cmsWidget></ng-template></div>`,
+  styles: [
+    `
+      .widget {
+        border: 1px solid red;
+        padding: 1rem;
+      }
+    `,
+  ],
 })
 export class CmsWidgetComponent implements OnInit {
   @ViewChild('cmsWidget', { read: ViewContainerRef, static: true })

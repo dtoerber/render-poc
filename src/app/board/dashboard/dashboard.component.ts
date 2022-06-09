@@ -10,13 +10,10 @@ import { Widget } from '../models/widget';
   styleUrls: ['./dashboard.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   widgets: Widget[] = [
     { name: 'TV Offer', component: TvOfferDetailsCardComponent },
     { name: 'Internet Offer', component: InternetOfferComponent },
     { name: 'Hybrid Offer', component: HybridOfferComponent },
   ];
-  constructor() {}
-
-  ngOnInit(): void {}
 }
