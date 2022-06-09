@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,6 +37,7 @@ import { AppBComponent } from './swap/app-b/app-b.component';
 import { WidgetDirective } from './swap/widget.directive';
 import { WidgetService } from './swap/widget.service';
 import { HybridOfferComponent } from './store-front/hybrid-offer/hybrid-offer.component';
+import { InternetOfferComponent } from './store-front/hybrid-offer copy/internet-offer.component';
 import { DashboardComponent } from './board/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -74,6 +74,7 @@ import { CmsWidgetComponent } from './board/cms-widget/cms-widget.component';
     HybridOfferComponent,
     DashboardComponent,
     CmsWidgetComponent,
+    InternetOfferComponent,
   ],
   imports: [
     BrowserModule,
