@@ -35,6 +35,8 @@ import { BirdDirective } from './bird.directive';
 import { StoreComponent } from './store-front-2/store/store.component';
 import { AppAComponent } from './store-front-2/app-a/app-a.component';
 import { AppBComponent } from './store-front-2/app-b/app-b.component';
+import { WidgetDirective } from './store-front-2/widget.directive';
+import { WidgetService } from './store-front-2/widget.service';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,7 @@ import { AppBComponent } from './store-front-2/app-b/app-b.component';
     StoreComponent,
     AppAComponent,
     AppBComponent,
+    WidgetDirective,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,7 @@ import { AppBComponent } from './store-front-2/app-b/app-b.component';
     DragDropModule,
     SpeedometerModule,
   ],
-  providers: [],
+  providers: [WidgetService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
