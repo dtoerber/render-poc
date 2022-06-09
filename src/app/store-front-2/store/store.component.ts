@@ -21,6 +21,7 @@ export class StoreComponent implements OnInit {
   widgets = this.widgetService.getWidgets();
   @ViewChild(WidgetDirective, { static: true }) appWidget!: WidgetDirective;
 
+  currentComponet = 0;
   constructor(private widgetService: WidgetService) {}
 
   ngOnInit(): void {
@@ -28,6 +29,7 @@ export class StoreComponent implements OnInit {
   }
 
   loadComponent(idx: number) {
+    this.currentComponet = idx;
     const viewContainerRef = this.appWidget.viewContainerRef;
     viewContainerRef.clear();
 
