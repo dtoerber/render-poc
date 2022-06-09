@@ -38,10 +38,11 @@ import { AppBComponent } from './swap/app-b/app-b.component';
 import { WidgetDirective } from './swap/widget.directive';
 import { WidgetService } from './swap/widget.service';
 import { HybridOfferComponent } from './store-front/hybrid-offer/hybrid-offer.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './board/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { CmsWidgetComponent } from './board/cms-widget/cms-widget.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { MatMenuModule } from '@angular/material/menu';
     WidgetDirective,
     HybridOfferComponent,
     DashboardComponent,
+    CmsWidgetComponent,
   ],
   imports: [
     BrowserModule,

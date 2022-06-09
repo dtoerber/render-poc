@@ -4,7 +4,7 @@ import { FarmComponent } from './components/farm/farm.component';
 import { TvOfferDetailsCardComponent } from './store-front/tv-offer-details-card/tv-offer-details-card.component';
 import { StorefrontComponent } from './store-front/storefront/storefront.component';
 import { StoreComponent } from './swap/store/store.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './board/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/storefront', pathMatch: 'full' },
