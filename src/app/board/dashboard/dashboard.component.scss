@@ -1,5 +1,12 @@
-.container {
+.widgets-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  app-cms-widget {
+    width: 400px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
 }
