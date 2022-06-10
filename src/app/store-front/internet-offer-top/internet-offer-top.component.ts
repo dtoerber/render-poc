@@ -45,8 +45,7 @@ export class InternetOfferTopComponent implements OnInit {
    * percentage of color to fill int the speedometer arc
    * Can be filled quarter, half, threeqtr, full.
    */
-  @Input() ringFillPercent: SpeedometerFillValues =
-    SpeedometerFillValues.THREEQTR;
+  @Input() ringFillPercent: SpeedometerFillValues = SpeedometerFillValues.HALF;
 
   /**
    * Text to include inside speedometer.

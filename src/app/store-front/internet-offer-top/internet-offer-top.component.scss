@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 300px;
+  // height: 300px;
 
   h2 {
+    padding-top: 2.5rem;
     text-align: center;
   }
 
@@ -14,7 +15,26 @@
     spectrum-speedometer {
       justify-self: center;
       width: 9.75rem;
-      // margin-bottom: 0.625rem;
     }
+  }
+}
+.details-price {
+  display: flex; // display amount and per-month side-by-side
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+
+  .details-price-amount {
+    font-size: 1.75rem;
+    letter-spacing: -0.0625rem;
+  }
+
+  .details-price-per-month {
+    max-width: 4rem;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    text-align: left;
+    padding-left: 0.3125rem;
   }
 }

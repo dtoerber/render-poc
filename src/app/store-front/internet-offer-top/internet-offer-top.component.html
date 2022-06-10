@@ -13,3 +13,12 @@
     ></spectrum-speedometer>
   </div>
 </div>
+
+<div class="details-price">
+  <div class="details-price-amount">
+    +{{ netPrice | currency: "USD":"symbol":"1.0-2" }}
+  </div>
+  <div class="details-price-per-month">
+    {{ planPriceText }}
+  </div>
+</div>
