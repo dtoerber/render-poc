@@ -5,12 +5,17 @@ import { TvOfferDetailsCardComponent } from './store-front/tv-offer-details-card
 import { StorefrontComponent } from './store-front/storefront/storefront.component';
 import { StoreComponent } from './swap/store/store.component';
 import { DashboardComponent } from './board/dashboard/dashboard.component';
+import { InternetOfferComponent } from './store-front/internet-offer/internet-offer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/storefront', pathMatch: 'full' },
   {
     path: 'tv',
     component: TvOfferDetailsCardComponent,
+  },
+  {
+    path: 'internet',
+    component: InternetOfferComponent,
   },
   {
     path: 'farm',

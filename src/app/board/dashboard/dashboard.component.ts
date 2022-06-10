@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HybridOfferComponent } from 'src/app/store-front/hybrid-offer/hybrid-offer.component';
-import { InternetOfferComponent } from 'src/app/store-front/hybrid-offer copy/internet-offer.component';
+import { InternetOfferComponent } from 'src/app/store-front/internet-offer/internet-offer.component';
 import { TvOfferDetailsCardComponent } from 'src/app/store-front/tv-offer-details-card/tv-offer-details-card.component';
 import { Widget } from '../models/widget';
 
